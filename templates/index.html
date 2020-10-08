@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+input{
+  margin-left: 45;
+}
+p{
+  margin-top: 60;
+}
+.container{
+  text-align: center;
+}
+</style>
+</head>
+<body style = "background-color: #b2deec;">
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Credit Card Default Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://credit-card-default-predi.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+        </li>                
+      </ul>
+    </div> -->
+  </nav>
+  </header>
+  <div style= "text-align: center;">
+    
+    <p>This model predicts whether a customer's account will default next month.</p>
+  </div>
+  <form  style= "text-align: center; "action="/predict" method="POST">
+    <div class = "form-group">
+    <label for="LIMIT_BAL">Limit Balance</label>
+    <input type="number" id="LIMIT_BAL" name="LIMIT_BAL">
+    </div>
+    <div class = "form-group">
+    <label for='EDUCATION'>Education</label>
+    <input type="number" id='EDUCATION' name='EDUCATION' style= "margin-left: 70px;">
+    </div>
+    <div class = "form-group">
+    <label for='MARRIAGE'>Marriage</label>
+    <input type="number" id='MARRIAGE' name='MARRIAGE' style= "margin-left: 70px;">
+    </div>
+    <div class = "form-group">
+    <label for="AGE">Age</label>
+    <input type="number" id="AGE" name="AGE" style= "margin-left: 110px;">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_1">Payment_1</label>
+    <input type="number" id="PAY_1" name="PAY_1"style= "margin-left: 60px;">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT1">Bill_Amount_1</label>
+    <input type="number" id="BILL_AMT1" name="BILL_AMT1">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT2">Bill_Amount_2</label>
+    <input type="number" id="BILL_AMT2" name="BILL_AMT2">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT3">Bill_Amount_3</label>
+    <input type="number" id="BILL_AMT3" name="BILL_AMT3">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT4">Bill_Amount_4</label>
+    <input type="number" id="BILL_AMT4" name="BILL_AMT4">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT5">Bill_Amount_5</label>
+    <input type="number" id="BILL_AMT5" name="BILL_AMT5">
+    </div>
+    <div class = "form-group">
+    <label for="BILL_AMT6">Bill_Amount_6</label>
+    <input type="number" id="BILL_AMT6" name="BILL_AMT6">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT1">Pay_Amount_1 </label>
+    <input type="number" id="PAY_AMT1" name="PAY_AMT1">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT2">Pay_Amount_2</label>
+    <input type="number" id="PAY_AMT2" name="PAY_AMT2">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT3">Pay_Amount_3</label>
+    <input type="number" id="PAY_AMT3" name="PAY_AMT3">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT4">Pay_Amount_4</label>
+    <input type="number" id="PAY_AMT4" name="PAY_AMT4">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT5">Pay_Amount_5</label>
+    <input type="number" id="PAY_AMT5" name="PAY_AMT5">
+    </div>
+    <div class = "form-group">
+    <label for="PAY_AMT6">Pay_Amount_6</label>
+    <input type="number" id="PAY_AMT6" name="PAY_AMT6">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Made with ❤ by <a href="https://github.com/yash-makadia">Yash Makadia</a></span>
+  </div>
+  </footer>
+</body>
+</html>

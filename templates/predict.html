@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+body{
+  text-align: center;
+}
+img{
+    height: 50%;
+  width: 50%;
+}
+main{
+  margin-top: 60;
+}
+</style>
+</head>
+   <body style = "background-color: #b2deec;">
+    <header>
+  <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Credit Card Default Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://credit-card-default-predi.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+        </li>                
+      </ul>
+    </div>
+  </nav> -->
+  </header>
+  <main>
+    <h1>Here is the prediction for your credit card: </h1>    
+    {% if prediction == "1" %}
+        <h2>Your credit card will default next month.</h1>
+    {% elif prediction == "0" %}                   
+        <h3>Your credit card will not default next month.</h1>
+    {% endif %}   
+   </main>  
+     <footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Made with ❤ by <a href="https://github.com/yash-makadia">Yash Makadia</a></span>
+  </div>
+  </footer>
+   </body>
+</html>
