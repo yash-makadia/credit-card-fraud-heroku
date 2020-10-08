@@ -1,2 +1,1 @@
-# credit-card-fraud-heroku
-Deployment Heoku
+# credit-cards-default-prediction-deployed-on-heroku
